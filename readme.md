@@ -34,14 +34,16 @@ The current page will show the courses of the current page. For example: if the 
 You need to pass the arguments as the command below:
 
 ```
-python3 free_courses_udemy.py -sc SUBCATEGORY_NAME -items ITEMS_VALUE -p CURRENT_PAGE
+python3 free_courses_udemy.py -sc="SUBCATEGORY_NAME" -items ITEMS_VALUE -p CURRENT_PAGE
 ```
 
 or this way:
 
 ```
-python3 free_courses_udemy.py --subcategory SUBCATEGORY_NAME --quantity ITEMS_VALUE --page CURRENT_PAGE
+python3 free_courses_udemy.py --subcategory="SUBCATEGORY_NAME" --quantity ITEMS_VALUE --page CURRENT_PAGE
 ```
+
+The subcategory **MUST CONTAIN** the equal sign and the argument **HAS TO BE** between quotation marks. If hasn't one of them, the code will not work. But if you write without them, the code will only work for the subcategories' names who has one white space or none. Example: Science, Programming Languages. But will not work for 3D & Animation, Social Media Marketing, etc..
 
 If you have any questions, use the command bellow for help:
 
